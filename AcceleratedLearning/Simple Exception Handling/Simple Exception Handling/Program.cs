@@ -27,7 +27,7 @@ namespace Exception_Handling
                 Console.WriteLine("\nEveryone gets " + resultat + " pieces. \n");
                 Console.ForegroundColor = ConsoleColor.White;
 
-               
+
             }
             catch (FormatException ex)
 
@@ -55,9 +55,9 @@ namespace Exception_Handling
                 Console.ForegroundColor = ConsoleColor.White;
 
             }
-         
 
-            
+
+
         }
     }
 }
