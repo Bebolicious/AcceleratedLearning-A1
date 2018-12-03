@@ -6,7 +6,7 @@ namespace Creating_files__Exception_and_permission_handling
     class Program
     {
 
-      
+
         static void Main(string[] args)
         {
 
@@ -17,12 +17,13 @@ namespace Creating_files__Exception_and_permission_handling
 
                 try
                 {
-                    
-                    Console.WriteLine("Enter a file name for your text document: ");
+
+                    Console.WriteLine("Enter a file path and file name for your text file: ");
                     File.CreateText(Console.ReadLine());
-                    
+
+                  
                     break;
-                   
+
 
 
                 }
@@ -35,7 +36,8 @@ namespace Creating_files__Exception_and_permission_handling
                     Console.WriteLine("You don't have access to this folder, ask the computer Admin for assistance.");
                     Console.WriteLine("You don't have access to this folder, ask the computer Admin for assistance.");
                     Console.ForegroundColor = ConsoleColor.White;
-                  
+                    Console.WriteLine("\n Try again... \n");
+
 
                 }
 
@@ -48,7 +50,9 @@ namespace Creating_files__Exception_and_permission_handling
                     Console.WriteLine("The directory you entered does not exist");
                     Console.WriteLine("The directory you entered does not exist");
                     Console.ForegroundColor = ConsoleColor.White;
-                   
+                    Console.WriteLine("\n Try again... \n");
+
+
 
                 }
 
@@ -56,14 +60,16 @@ namespace Creating_files__Exception_and_permission_handling
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.WriteLine("You didn't enter anything?\n");
-                    Console.WriteLine("You didn't enter anything?\n");
-                    Console.WriteLine("You didn't enter anything?\n");
+                    Console.WriteLine("You didn't enter anything?");
+                    Console.WriteLine("You didn't enter anything?");
+                    Console.WriteLine("You didn't enter anything?");
                     Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("\n Try again... \n");
+
 
                 }
 
-                
+
 
 
 
@@ -74,7 +80,11 @@ namespace Creating_files__Exception_and_permission_handling
             Console.WriteLine("Your file has been created");
             Console.WriteLine("Your file has been created");
             Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("\nProgram is shutting down...\n");
+            Console.ReadLine();
+           
 
         }
     }
 }
+
