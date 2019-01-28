@@ -1,0 +1,181 @@
+<html>
+<head>
+<title> hej</title>
+<link rel="stylesheet" type="text/css" href="2.css">
+<script src="script.js">
+</script>
+
+</head>
+
+<body>
+
+    <H1>En rubrik</H1>
+
+
+    <p id="demo"></p>
+    <h2>En mindre rubik</h2>
+    <button id="minknapp" onclick="myFunction()">Ange namn och skriv ut över ^</button>
+    <p>Ett textstycke med <strong>fet</strong> text</p>
+    <br>
+    <button id="resize" onclick="Resize()">ResizeMe</button>
+    <br />
+
+
+    <br />
+
+
+    <button id="knapp8">Kattbild</button>
+    <br />
+    <div id="goodPlaceForCat"></div>
+    <br />
+    <button id="knapp9">Skriv text</button>
+    <br />
+    <input id="textruta" />
+    <br />
+    <button id="knapp10">Skriv text utifrån textrutan</button>
+    <br />
+    <div id="sometext">
+    </div>
+
+    <script>
+        /*
+        Om användaren trycker på knapp8 => visa en katt
+
+        Tips: xxxx.innerHTML = "här kan du skriva vilken htmlkod som helst"
+        */
+        let goodPlaceForCat = document.getElementById("goodPlaceForCat");
+        let knapp8 = document.getElementById("knapp8");
+        function showCat() {
+            goodPlaceForCat.innerHTML = `<img style="width:200px" src="https://pics.me.me/a-cat-burrito-%F0%9F%98%82-14344755.png"/>`;
+        }
+        knapp8.addEventListener("click", showCat);
+        /*
+        Om användaren trycker på knapp9 => skriv en till rad "I believe you have my stapler."  till div'en "sometext"
+
+        Tips, för att utöka htmlkoden i ett element:
+
+            xxx.innerHTML = xxx.innerHTML + "nån mer htmlkod"
+        */
+        let sometext = document.getElementById("sometext");
+        let knapp9 = document.getElementById("knapp9");
+        knapp9.addEventListener("click", () => {
+            sometext.innerHTML = sometext.innerHTML + '<br>I believe you have my stapler.';
+        });
+        /* Om användaren trycker på knapp9 => skriv det som står i "textruta" i div'en "sometext"
+
+        Tips: för att plocka ut det användaren matat in i en textruta:
+            minTextruta.value
+
+        */
+        let knapp10 = document.getElementById("knapp10");
+        let textruta = document.getElementById("textruta");
+        knapp10.addEventListener("click", () => {
+            let textAttSkriva = textruta.value;
+            if (textAttSkriva == "") {
+                alert("Skriv nåt i textrutan")
+            } else {
+                sometext.innerHTML = sometext.innerHTML + "<br>" + textAttSkriva;
+            }
+
+        });
+    </script>
+
+
+    <script>
+        let padding = 10;
+        let paratext = "";
+        function WriteToUser(out) {
+
+            document.getElementById("he3j").innerHTML = out;
+        }
+
+
+        function writeUserLine() {
+
+            //document.getElementById("he3j").innerHTML = "hej";
+            document.getElementById("myForm").submit();
+            //var txt;
+            //var person = prompt("Please enter your name:", "Harry Potter");
+            //if (person == null || person == "") {
+            //    txt = "User cancelled the prompt.";
+            //} else {
+            //    txt = "Hello " + person + "! How are you today?";
+            //}
+            //
+
+
+        }
+
+
+        function writeLine() {
+
+            if (paratext == "") {
+                paratext = "Hej På Dig!"
+                document.getElementById('para').innerHTML = paratext + "hej På Dig";
+            }
+
+            paratext = "";
+
+        }
+
+
+        function showImage() {
+
+            document.getElementById('loadingImage').style.visibility = 'visible';
+
+
+        }
+
+        function Resize() {
+
+            let resize = document.getElementById("resize");
+
+
+
+            resize.style.padding = `${padding}px`;
+            padding += 30;
+
+
+
+
+
+        }
+        function myFunction() {
+            var txt;
+            var person = prompt("Please enter your name:", "Harry Potter");
+            if (person == null || person == "") {
+                txt = "User cancelled the prompt.";
+            } else {
+                txt = "Hello " + person + "! How are you today?";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+    <img src="https://i.ytimg.com/vi/-3Q3UBuAqxY/maxresdefault.jpg"><hr>
+
+
+    <h2>En tabell</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Oscar</td>
+                <td>Hejsan</td>
+                <td>ASdsd</td>
+            </tr>
+        </thead>
+    </table>
+
+</body>
+
+</html>

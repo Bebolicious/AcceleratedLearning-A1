@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\htmlintro\javascriptintro\**" />
+    <Content Remove="wwwroot\htmlintro\javascriptintro\**" />
+    <EmbeddedResource Remove="wwwroot\htmlintro\javascriptintro\**" />
+    <None Remove="wwwroot\htmlintro\javascriptintro\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\javascriptintro\" />
+  </ItemGroup>
+
+</Project>

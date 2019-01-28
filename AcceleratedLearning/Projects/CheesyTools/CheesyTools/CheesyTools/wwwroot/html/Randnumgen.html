@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styling/boxstate.css">
+    <link rel="stylesheet" href="styling/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="apple-icon.png" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport">
+
+
+    <title>Cheesy Tools</title>
+</head>
+<body style="background-color:yellow;">
+
+
+    <ul class="menu cf">
+        <li><a href="index.html" class="link22" style="width: 165px;">Home</a></li>
+        <li>
+            <a href="" class="link22" style="width: 200px;">Tools</a>
+            <ul class="submenu">
+                <li><a href="boxstate.html" class="link22">Hex Code Generator</a></li>
+                <li><a href="" class="link22">Random Number Generator</a></li>
+                <li><a href="" class="link22">Password Security</a></li>
+                <li><a href="" class="link22">String Hasher</a></li>
+            </ul>
+        </li>
+        <li><a href="" class="link22" style="width: 150px;">Contact</a></li>
+
+    </ul>
+
+    <h1 class="display-4" style="text-align:center">Random Number Generator</h1>
+    <div id="container2" style="text-align: center;">
+        <form id="numbers">
+            <div class="centerform">
+                <input type="number" id="min" name="min"  class="form-control form-control-sm" placeholder="Min" style="width: 80px;">
+            </div> 
+
+            <div class="centerform">
+                <input type="number" id="max" name="max"  class="form-control form-control-sm" placeholder="Max" style="width: 80px; ">
+
+            </div>
+        </form>
+        <div id="result"position:fixed></div>
+        <br />
+        <button type="button" id="nrbt" style="margin: 50px;" class="btn btn-dark">Generate number!</button>
+
+    </div>
+    <footer>
+
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright :<a href="index.html"> CheesyTools</a>
+        </div>
+
+    </footer>
+    <script src="script/scripts.js"></script>
+</body>
+</html>

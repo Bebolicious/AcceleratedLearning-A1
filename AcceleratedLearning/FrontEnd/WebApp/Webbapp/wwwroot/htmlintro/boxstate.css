@@ -1,0 +1,37 @@
+﻿
+body {
+    text-align: center;
+    
+}
+
+button{
+
+    text-align:center;
+}
+
+.button {
+    background-color: #808080; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 28px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    align-content: center;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    cursor: pointer;
+   
+}
+
+.button1:hover {
+    background-color: red;
+    color: white;
+}
+
+.colorToUser {
+    font-size:20px;
+}

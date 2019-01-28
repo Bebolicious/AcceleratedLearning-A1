@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Make use of JavaScript Assignment</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+
+
+
+    <script>
+
+
+
+        function changeImage() {
+            
+            var knapp = document.getElementById('lampa1');
+            var knapp2 = document.getElementById('lampa2');
+            knapp.addEventListener('click', changeImage2)
+            knapp2.addEventListener('click', changeImage2)
+          
+        }
+        function changeImage2() {
+
+            for (var i = 1; i < 6; i++) {
+
+                var image = document.getElementById('lightbulb' + i);
+                if (image.src.match("light_bulb_on.png")) {
+                    image.src = "light_bulb_off.png";
+                } else {
+                    image.src = "light_bulb_on.png";
+                }
+
+            }
+        }
+    
+
+
+</script>
+
+</head>
+
+<body>
+    <button id="lampa1" onclick="changeImage()">Bulb On</button>
+    <button id="lampa2" onclick="changeImage()">Bulb On</button>
+
+
+    <div id="LB">
+
+        <img id="lightbulb1" src="light_bulb_off.png" width="189" height="300">
+    </div>
+    <div id="LB2">
+
+        <img id="lightbulb2" src="light_bulb_off.png" width="189" height="300">
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="boxstate.css">
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--<button id="buttonB">Blue</button>
+    <button id="buttonC">Green</button>-->
+    <!--<button id="ButtonA">Colorswap.Me</button>-->
+
+    <div id="box" style="width:500px;height:500px"></div>
+    <button class="button button1" id="ButtonA">Ge mig en färg!</button>
+    <p id="colorToUser" style="font-family:Ebrima;font-size:20px;text-align:center;text-decoration:double"></p>
+
+    <script>
+        let txt = "";
+        //document.getElementById("buttonA").addEventListener("click", function () {
+        //    document.getElementById("box").style.backgroundColor = "Red";
+        //}
+        //);
+
+        //function start() {
+        //    var colorswap = document.getElementById("ButtonA")
+        //    colorswap.addEventListener("click", toggle);
+        //};
+
+        //function toggle() {
+        //    var color = document.getElementById("box");
+        //    var backColor = color.style.backgroundColor;
+        //    color.style.backgroundColor = backColor === "Red" ? "white" : "Red";
+        //};
+
+        //start();
+
+        document.getElementById("ButtonA").addEventListener("click", colorGenerator);
+
+        function colorGenerator() {
+            var randomcolor = "";
+            var hexkod = "0123456789ABCDEF";
+            for (var i = 0; i < 6; i++) {
+                randomcolor += hexkod[Math.floor(Math.random() * 16)];
+
+
+            }
+
+            document.body.style.backgroundColor = "#" + randomcolor;
+            txt = "Din färgkod:  " + randomcolor;
+
+            document.getElementById("colorToUser").innerHTML = txt;
+        }
+
+
+
+            //        let box = document.getElementById("box");
+            //        let previousButton = document.getElementById("previousButton");
+            //        let nextButton = document.getElementById("nextButton");
+            //        let currentState = 100;
+            //function redraw() {
+            //            box.style.backgroundColor = `rgb(${currentState},0,0)`;
+            //        }
+            //previousButton.addEventListener("click", () => {
+            //            currentState -= 20;
+            //        if (currentState < 0) currentState = 0;
+            //        redraw();
+            //    })
+            //nextButton.addEventListener("click", () => {
+            //            currentState += 20;
+            //    if (currentState > 255) currentState = 255;
+            //        redraw();
+            //    })
+            //    redraw();
+
+
+                        //document.getElementById("buttonB").addEventListener("click", function () {
+                        //    document.getElementById("box").style.backgroundColor = "Blue";
+                        //}
+                        //);
+
+                        //document.getElementById("buttonC").addEventListener("click", function () {
+                        //    document.getElementById("box").style.backgroundColor = "Green";
+                        //}
+                        //);
+
+
+    </script>
+
+
+</body>
+</html>
