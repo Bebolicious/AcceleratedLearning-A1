@@ -129,5 +129,36 @@ namespace WebApi.Controllers
 
         }
 
+
+        //[Route("Addbreakfast")]
+        //public IActionResult Addbreakfast()
+        //{
+        //    string formContent = "";
+        //    using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
+        //    {
+        //        formContent = reader.ReadToEndAsync().Result;
+        //    }
+
+        //    // Du behöver göra "Planet"-klassen och metoden "ParsePlanet"
+        //    Breakfast breakfast = Breakfast(formContent);
+
+        //    return Ok($"Your planets name: Your planets size: m2");
+        //}
+
+        //private Breakfast Breakfast(string formContent)
+        //{
+
+        //    Breakfast eat = new Breakfast()
+
+
+        //}
+
+
+        [HttpPost("Addbreakfast")]
+        public IActionResult Addbreakfast(Breakfast breakfast)
+        {
+
+            return Ok($"{breakfast.Type} is sooo good!");
+        }
     }
 }
