@@ -1,0 +1,23 @@
+﻿
+<h2>Index</h2>
+
+<a asp-controller="product" asp-action="testy">testy</a>
+<a asp-controller="product" asp-action="Yrittää">Yrittää</a>
+<a asp-controller="product" asp-action="ListAll">ListAll</a>
+<a asp-controller="product" asp-action="Index">Produkindex</a>
+<a asp-controller="product" asp-action="GetById" asp-route-id="4">Hammare</a>
+<a asp-controller="product" asp-action="GetById" asp-route-id="1">Gurka</a>
+<a asp-controller="product" asp-action="GetById" asp-route-id="3">Vuvuzela</a>
+
+<form asp-controller="product" asp-action="GetById" method="get">
+    <input type="text" name="Id" />
+    <button type="submit">Ok</button>
+</form>
+
+
+
+@*<a href="../Product/Yrittää">Yrittää</a>*@
+@*<a href="../Product/ListAll">Produktlista</a>
+    <a href="../Product/GetById/4">Produkt 4</a>
+    <a href="../Product/GetById/1">Produkt 1</a>
+    <a href="../Product/GetById/3">Produkt 3</a>*@

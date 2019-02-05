@@ -1,0 +1,16 @@
+﻿
+@model List<Spell>
+
+<h1> Alla produkter</h1>
+
+Antal produkter: @Model.Count
+<p>Första produkten är: @Model[0].Name</p>
+<h2>ListAll</h2>
+<ul>
+    @foreach (Mvc01.Models.Spell x in Model)
+    {
+        <li><a asp-action="getbyid" asp-route-id="@x.Id">@x.Name</a></li>
+    }
+
+</ul>
+

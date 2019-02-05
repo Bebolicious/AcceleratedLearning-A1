@@ -1,0 +1,11 @@
+﻿
+@model IEnumerable<Spells>
+<link href="~/css/main.css" rel="stylesheet" />
+<h1>Alla produkter</h1>
+
+<ul>
+    @foreach (Spells x in Model)
+    {
+        <li><a asp-action="" asp-route-id="@x.Id">@x.Name</a></li>
+    }
+</ul>

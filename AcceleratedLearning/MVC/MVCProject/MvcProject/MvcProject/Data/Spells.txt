@@ -1,0 +1,20 @@
+﻿1,Expelliarmus
+2,Wingardium Leviosa
+3,Sectumsempra
+4,Lumos
+5,Bombarda
+6,Avada Kedavra
+7,Reparo
+8,Crucio
+9,Protego Totalum
+10,Imperio
+11,Accio
+12,Stupefy
+13,Alohomora
+14,Petrificus Totalus
+15,Obliviate
+16,Nox
+17,Morsmordre
+18,Expecto Patronum
+19,Incendio
+20,AquamentiS

@@ -1,0 +1,7 @@
+﻿1, Gurka, 98% vatten
+3, Vuvuzela, låter högt
+4, Hammare, Fråga Tor
+5,Tomat, Nästan alltd gröda
+6,Majs, Nästan alltid najs
+7,Oscar, Också najs
+21,Hejsan, hejasn

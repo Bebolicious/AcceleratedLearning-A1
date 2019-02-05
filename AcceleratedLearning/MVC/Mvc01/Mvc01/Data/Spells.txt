@@ -1,0 +1,20 @@
+﻿1,Expelliarmus,Disarming 
+2,Wingardium Leviosa,Levitation
+3,Sectumsempra,Cutting
+4,Lumos,Illuminating
+5,Bombarda,Explosion
+6,Avada Kedavra,Killing
+7,Reparo,Repairing
+8,Crucio,Torture
+9,Protego Totalum,Charm
+10,Imperio,Controlling
+11,Accio,Fetching
+12,Stupefy,Knockback
+13,Alohomora,Unlocking
+14,Petrificus Totalus,Petrification
+15,Obliviate,Removing memories
+16,Nox,delluminating
+17,Morsmordre,Calling
+18,Expecto Patronum,Defending
+19,Incendio,Burning
+20,Aquamenti,Water
