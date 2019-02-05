@@ -1,0 +1,36 @@
+﻿body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+thead td {
+    color: #52a2b8;
+}
+
+input {
+    padding: 4px;
+    margin: 0 0 10px 0;
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    height: 60px;
+    margin: 0 0 15px 0;
+}
+
+label {
+    font-size: 12px;
+    margin-left: 1px;
+}

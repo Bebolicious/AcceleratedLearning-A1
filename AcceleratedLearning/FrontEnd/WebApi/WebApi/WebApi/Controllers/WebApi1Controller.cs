@@ -154,11 +154,27 @@ namespace WebApi.Controllers
         //}
 
 
-        [HttpPost("Addbreakfast")]
-        public IActionResult Addbreakfast(Breakfast breakfast)
+        [HttpGet("Addbreakfast")]
+        public IActionResult Addbreakfast(string breakfast)
         {
-
-            return Ok($"{breakfast.Type} is sooo good!");
+            
+            if (breakfast.ToLower() == "mango")
+            {
+                return Ok($"{breakfast} is sooo good!");
+            }
+            else
+            {
+                return Ok($"{breakfast} is disgusting.");
+            }
         }
+
+        [HttpGet("AddBackground")]
+        public IActionResult AddBackground(string background)
+        {
+            string html = $"<body style=\"background-color:{background};\">";
+            return Content(html, "Text/html"); 
+        } 
+
+
     }
 }

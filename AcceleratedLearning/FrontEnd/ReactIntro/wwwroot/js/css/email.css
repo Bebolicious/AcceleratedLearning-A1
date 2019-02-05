@@ -1,0 +1,17 @@
+﻿p, input  {
+    display:block;
+    padding:10px;
+    margin:10px;
+}
+
+label {
+    display:block;
+    margin-left:10px;
+}
+body, input {
+    font-family: Arial;
+}
+
+.textwrap{
+    margin:40px;
+}

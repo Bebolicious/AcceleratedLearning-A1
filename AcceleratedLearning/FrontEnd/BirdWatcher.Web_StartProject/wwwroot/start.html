@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Fåglar</title>
+    <link href="/css/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="css/favicon.png" />
+</head>
+<body>
+
+    <button onclick="recreateDatabase()" id="recreateButton">Recreate database</button>
+    <div>
+        <h3>Lägg till observation</h3>
+
+        Fågel: <select id="addbird">
+            <option value="1">Kungsfiskare</option>
+            <option value="2">Tornfalk</option>
+            <option value="3">Skäggdopping</option>
+        </select>
+        <button onclick="AddBird()">Add</button>
+    </div>
+
+    <h3>Alla Observationer</h3>
+    <button onclick="ShowAll()" class="btn-inline">Show all</button>
+
+    <div id="birdList" style="color: darkgray;">
+    </div>
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

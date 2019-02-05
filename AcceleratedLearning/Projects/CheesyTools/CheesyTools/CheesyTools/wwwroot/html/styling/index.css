@@ -173,7 +173,7 @@ footer {
 
     .submenu li {
         backface-visibility: hidden;
-        transition: .4s ease transform;
+        transition: .7s ease transform;
     }
 
 .menu > li:hover .submenu,

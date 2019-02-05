@@ -66,9 +66,18 @@
 
     <h3>What have you eaten this morning? </h3>
 
-    <form method="post" action="/webapi1/Addbreakfast">
-        Breakfast: <input name="Type" />
+    <form method="get" action="/webapi1/Addbreakfast">
+        Breakfast: <input name="breakfast" />
         <button>Ok</button>
+    </form>
+
+    <hr />
+
+    <h3>Write the color of the background you want. </h3>
+
+    <form method="get" action="/webapi1/AddBackground">
+        Background: <input name="background" />
+        <button>Set Background</button>
     </form>
 
     <hr />

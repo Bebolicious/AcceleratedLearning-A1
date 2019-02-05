@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <h2>Create Document</h2>
+
+    <form method="post" action="/WebApi6/AddDocument">
+
+        Title: <input name="Title" type="text" /><br />
+        Pages:<input name="Pages" type="text" /><br />
+        Has Summary:<input name="Summary" type="checkbox" value="true"/><br />
+        Publishes: <input name="Publish" type="datetime-local" /><br />
+        Price:<input name="Price" type="text" /><br />
+
+        <select name="Filetype">
+            Filetype:
+            <option value="pdf">pdf</option>
+            <option value="doc">doc</option>
+            <option value="docx">docx</option>
+            <option value="txt">txt</option>
+        </select>
+        <select name="Tags" multiple>Tags:
+            <option value="Comedy">Comedy</option>
+            <option value="Romance">Romance</option>
+            <option value="Horror">Horro</option>
+            <option value="Fantasy">Fantasy</option>
+        </select>
+
+
+        <button type="submit">Ok</button>
+
+    </form>
+
+
+
+
+
+</body>
+</html>

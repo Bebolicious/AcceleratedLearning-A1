@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Newsapp</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="img/icons8-reddit-64.png" />
+</head>
+<body style="background: grey;">
+
+    <div class="topbuttons">
+        <button onclick="ShowAllInTable()" class="btn-inline">Show all in table</button>
+        <button onclick="ShowAll()" class="btn-inline">Show all</button>
+        <button onclick="clickSeed()" class="btn-inline">Seed</button>
+        <button onclick="clickStatArea()" class="btn-inline">Statistics</button>
+        <button onclick="clickRecreate()" class="btn-inline">Recreate</button>
+        <button onclick="clickShowAddNews()" class="btn-inline">Add</button>
+    </div>
+
+    <div id="newsList" hidden>
+    </div>
+
+    <div id="showAllTable">
+
+    </div>
+
+
+    <div id="addArea" hidden>
+        <h3>Add news</h3>
+
+        Header: <input id="addAreaHeader" type="text" />
+        Category: <select id="addAreaCategory">
+        <option value="1">Nature</option>
+        <option value="2">Australia</option>
+        
+        </select>
+        Intro: <input id="addAreaIntro" type="text" />
+        Body: <input id="addAreaBody" type="text" />
+
+        <button onclick="clickAddNews()">Add</button>
+        
+        <div id="addAreaError"></div>
+
+    </div>
+
+
+    <div id="updateArea" hidden>
+        <h3>Update</h3>
+        Id: <input id="updateAreaId" type="text" readonly="readonly" />
+        Header: <input id="updateAreaHeader" type="text" />
+        Category: <select id="updateAreaCategory"></select>
+        Intro: <input id="updateAreaIntro" type="text" />
+        Body: <input id="updateAreaBody" type="text" />
+        <button type="submit" onclick="clickUpdateNews()">Update</button>
+        <div id="updateAreaError"></div>
+    </div>
+    
+    <div id="statArea" hidden>
+        <h3>Statistics</h3>
+
+        Number of news: <span id="nrOfNews"></span>
+    </div>
+<script src="/js/main.js"></script>
+</body>
+</html>

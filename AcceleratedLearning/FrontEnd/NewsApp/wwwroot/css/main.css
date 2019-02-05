@@ -1,0 +1,68 @@
+﻿hr {
+    margin:40px 0;
+}
+
+.row-padding {
+    padding: 15px;
+}
+
+.row-highlight {
+    background-color: #ddd;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+button, a, input, select, textarea {
+    display: block;
+    margin: 3px 0;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 314px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+table {
+    border-spacing: 0
+}
+
+td {
+    border: solid 1px #ddd;
+    padding: 5px 10px;
+}
+
+.btn-inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.topbuttons {
+    margin-bottom: 25px;
+}
+
+#addForm, #updateForm, #countArea {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+#addAreaError, #updateAreaError {
+    margin-top: 18px;
+    background-color: #ffebeb;
+    padding: 8px;
+}
+
+#addAreaError:empty, #updateAreaError:empty {
+    display: none;
+}
