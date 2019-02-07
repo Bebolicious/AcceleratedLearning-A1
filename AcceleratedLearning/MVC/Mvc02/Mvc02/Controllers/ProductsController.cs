@@ -21,9 +21,23 @@ namespace Mvc02.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
-            return View(await _context.Product.Include(x => x.Category).ToListAsync());
+           
+
+            if (id == null)
+            {
+
+                return View(await _context.Product.Include(x => x.Category).ToListAsync());
+                
+
+            }
+            else
+            {
+                int? lastId = id;
+                id = null;
+            return View(await _context.Product.Include(x => x.Category).Where(x=> x.CategoryId == lastId).ToListAsync());
+            }
         }
 
         // GET: Products/Details/5
@@ -62,7 +76,7 @@ namespace Mvc02.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,CategoryId")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,CategoryId, ForSale")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +100,13 @@ namespace Mvc02.Controllers
             {
                 return NotFound();
             }
-            return View(product);
+            var ViewModel = new CreateProductVM()
+            {
+                AllCategories = _context.Category.Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() })
+            };
+
+            ViewModel.Product = product;
+            return View(ViewModel);
         }
 
         // POST: Products/Edit/5
@@ -94,7 +114,7 @@ namespace Mvc02.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,CategoryId")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,CategoryId,ForSale")] Product product)
         {
             if (id != product.Id)
             {

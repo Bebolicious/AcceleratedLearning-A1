@@ -33,8 +33,10 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-controller="Products" asp-action="index">Products</a></li>
+                    <li><a asp-controller="Products" asp-action="index" asp-route-id="">Products</a></li>
                     <li><a asp-controller="Categories" asp-action="index">Category</a></li>
+                    <li><a asp-controller="Admins" asp-action="index">Admin</a></li>
+
                 </ul>
                 <partial name="_LoginPartial" />
             </div>

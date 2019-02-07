@@ -1,4 +1,4 @@
 ﻿use Mvc_02
 
-SELECT *
-FROM AspNetUsers
+select * from AspNetRoles
+select * from AspNetUsers

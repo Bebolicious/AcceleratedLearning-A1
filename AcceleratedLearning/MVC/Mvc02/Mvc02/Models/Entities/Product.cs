@@ -13,7 +13,7 @@ namespace Mvc02.Models.Entities
         public string Name { get; set; }
         [Range(0,1000, ErrorMessage = "Price cannot be negative or higher than 1000")]
         public decimal Price { get; set; }
-
+        public bool ForSale { get; set; }
         public Category Category { get; set; }
         public int CategoryId { get; set; }
     }

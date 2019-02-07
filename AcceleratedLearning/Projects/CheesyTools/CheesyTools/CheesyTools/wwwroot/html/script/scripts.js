@@ -36,7 +36,7 @@ function genNum() {
 function generateRandomNumber(max, min) {
     let parachute = "Please fill in a minimum and maximum value";
 
-    if (max == NaN || min == NaN) {
+    if (max === NaN || min === NaN) {
         return parachute;
     }
 

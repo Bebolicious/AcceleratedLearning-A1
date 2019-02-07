@@ -15,5 +15,6 @@ namespace Mvc02.Data
         }
         public DbSet<Mvc02.Models.Entities.Product> Product { get; set; }
         public DbSet<Mvc02.Models.Entities.Category> Category { get; set; }
+        public DbSet<Mvc02.Models.Entities.Admin> Admin { get; set; }
     }
 }

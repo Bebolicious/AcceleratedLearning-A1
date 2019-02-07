@@ -34,21 +34,6 @@ else if (message === '!about'){
 
     client.action('a1bebo', 'This bot is coded by a1bebo using the tmi.js and node.js libraries. Feel free to whisper a1bebo on twitch if you have any questions.')
 }
-else if (message === 'fan')
-{
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	client.action('a1bebo', ' sluta svära!!!')
-	
-}
+
 
 })
